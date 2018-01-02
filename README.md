@@ -1,5 +1,5 @@
 # 目录 #
 
-**drawline**  
+[drawline][canvas 绘图](https://github.com/guanm/planet/tree/master/examples/drawline)
 
-**harrypotter**
+[harrypotter][canvas 手势识别](https://github.com/guanm/planet/tree/master/examples/harrypotter)
