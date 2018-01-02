@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=750 user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no,email=no" name="format-detection">
+<title>satellite</title>
+<style>
+	.planet{
+		-webkit-transform-origin:content center;
+		transform-origin:center center;
+	}
+	.rf{
+		-webkit-animation:c 60s infinite linear;
+		animation: c 60s infinite linear;
+	}
+	@keyframes c{
+		to{
+			-webkit-transform:rotate(-1turn);
+			transform:rotate(-1turn);
+		}
+	}
+
+	#satellite{
+		width:70px;
+		height:70px;
+		top:0;
+		left:-50px;
+		transform: matrix3d(-0.279574, 0.960124, 0, 0, -0.960124, -0.279574, 0, 0, 0, 0, 1, 0, 592.588, 853.33, 0, 1);
+	}
+
+	.shipAt-1{
+		-webkit-animation: a 2s steps(2) infinite;
+		animation: a 2s steps(2) infinite;
+		transform: translate3d(0px, -10px, 0px);
+	}
+
+	@keyframes a{
+		from{
+			background-posiiton-x:0;
+		}
+		to{
+			background-position-x:100%;
+		}
+	}
+</style>
+<script>
+	document.getElementsByTagName('shipAt-1')
+</script>
+</head>
+<body>
+	<div id="planet-1" class="planet" data-id="1" style="position:absolute;opacity: 1; width: 213px; height: 213px; top: 714px; left: 185px;">
+		<div class="ball rf" style="width:100%;height:100%;background-size:100%;background-image: url(../../assets/img/satellite/1.png);"></div>
+	</div>
+	<div id="satellite" style="background-size:100%;position:absolute;background-image: url(../../assets/img/satellite/2.png); display: block;">
+	</div>
+	<div class="ship" style="width: 305px; height: 250px; top: 800px; left: 385px; z-index: 99;position:absolute">
+		<div class="dom atShip shipAt-1" style="width:100%;height:100%;background-size:300% 100%;background-image: url(../../assets/img/satellite/ship.png);">
+		</div>
+	</div>
+<script>
+	//var blob = new Blob(['body { color: red; }'], {type: 'text/css'});
+</script>
+</body>
+</html>
